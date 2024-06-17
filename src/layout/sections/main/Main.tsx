@@ -1,39 +1,37 @@
 import React from 'react';
-import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {StyledLink} from "../../../components/StyledLink";
 import {Container} from "../../../components/Container";
+import mainPicture from "../../../assets/img/mainPicture.png";
+import {S} from "./Main_Styles";
 
-export const Main = () => {
+export const Main: React.FC = () => {
     return (
-        <StyledMain>
+        //Эту секцию полностью глянуть
+        <S.Main>
             <Container>
-                <FlexWrapper>
-                    <TextWrapper>
-                        <h1>Software Developer</h1>
-                        <h2>Hello,  my name is Vahid Navazan</h2>
-                        <Text>Short text with details about you, what you do or your professional career. You can add more information on the about page.</Text>
-                        <FlexWrapper>
+                <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap-reverse"} gap={'70px'}>
+                    <S.TextWrapper>
+                        <S.TextContainer>
+                            <S.Profession>Software Developer</S.Profession>
+                        </S.TextContainer>
+                        <S.TextContainer>
+                            <S.Name>Hello,  my name is Vahid Navazan</S.Name>
+                        </S.TextContainer>
+                        <S.TextContainer>
+                            <S.Text>Short text with details about you, what you do or your professional career. You can add more information on the about page.</S.Text>
+                        </S.TextContainer>
+                        <FlexWrapper gap={"12px"}>
                             <StyledLink>Projects</StyledLink>
-                            <StyledLink>Linked in</StyledLink>
+                            <StyledLink border={true} background={"transparent"}>LinkedIn</StyledLink>
                         </FlexWrapper>
-                    </TextWrapper>
+                    </S.TextWrapper>
+
+                    <S.PictureWrapper>
+                        <img src={mainPicture} alt={"It's Me!!!"}/>
+                    </S.PictureWrapper>
                 </FlexWrapper>
             </Container>
-        </StyledMain>
+        </S.Main>
     );
 };
-
-const StyledMain = styled.section`
-    padding-top: 55px;
-    background-color: #ffff95;
-`
-
-const TextWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-`
-
-const Text = styled.p`
-    
-`

@@ -3,10 +3,12 @@ import {theme} from "../styles/Theme";
 
 export const SectionTitle = styled.span`
     text-align: center;
+    color: ${theme.colors.primaryFont};
     display: inline-block;
     position: relative;
+
+    font-family: Playfair Display, sans-serif;
     font-size: 48px;
-    font-style: normal;
     font-weight: 700;
     line-height: 72px;
     

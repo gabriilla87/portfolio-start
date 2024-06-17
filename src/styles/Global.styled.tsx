@@ -17,6 +17,7 @@ export const GlobalStyles = createGlobalStyle`
     a {
         text-decoration: none;
         cursor: pointer;
+        color: ${theme.colors.primaryFont};
     }
     
     section {
@@ -24,13 +25,20 @@ export const GlobalStyles = createGlobalStyle`
         background-color: ${theme.colors.primary};
     }
 
+    button {
+        background-color: unset;
+        border: none;
+        cursor: pointer;
+    }
+    
     body {
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         line-height: 1.2;
+        min-width: 360px;
     }
 `
