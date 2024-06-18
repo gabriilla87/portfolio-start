@@ -18,11 +18,18 @@ const Footer = styled.footer`
     
     //Нужно как-то растянуть на весь экран
     &::before {
-        content: url(${footerImg});
+        content: "";
         position: absolute;
-        right: 50%;
-        transform: translateX(50%);
+        right: 0;
+        left: 0;
+        bottom: 0;
         z-index: -1;
+        width: 100%;
+        height: 24vw;
+        max-height: 350px;
+        background-image: url(${footerImg});
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
 `
 

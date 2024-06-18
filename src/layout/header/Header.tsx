@@ -5,6 +5,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {Container} from "../../components/Container";
 import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
 import {S} from "./Header_Styles";
+import {Logo} from "../../components/Logo";
 
 export const menuItems = [
     {
@@ -48,7 +49,7 @@ export const Header: React.FC = () => {
         <S.Header>
             <Container>
                 <FlexWrapper justify={"space-between"} align={"center"}>
-                    <Icon iconId={"brandLogo"} width="189" height="20" viewBox="0 0 189 20"/>
+                    <Logo/>
                     {width < breakpoint ? <MobileMenu/>
                                         : <DesktopMenu/>}
                 </FlexWrapper>
