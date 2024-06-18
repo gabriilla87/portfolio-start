@@ -1,6 +1,7 @@
 {
   "name": "portfolio-start",
   "version": "0.1.0",
+  "homepage": "https://gabriilla87.github.io/portfolio-start",
   "private": true,
   "dependencies": {
     "@babel/core": "7.16.0",
@@ -13,6 +14,7 @@
     "@types/node": "16.7.13",
     "@types/react": "18.0.0",
     "@types/react-dom": "18.0.0",
+    "@types/react-scroll": "^1.8.10",
     "babel-jest": "27.4.2",
     "babel-loader": "8.2.3",
     "babel-plugin-named-asset-import": "0.3.8",
@@ -30,6 +32,7 @@
     "eslint-webpack-plugin": "3.1.1",
     "file-loader": "6.2.0",
     "fs-extra": "10.0.0",
+    "gh-pages": "^6.1.1",
     "html-webpack-plugin": "5.5.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "27.4.3",
@@ -47,6 +50,7 @@
     "react-dev-utils": "12.0.1",
     "react-dom": "18.2.0",
     "react-refresh": "0.11.0",
+    "react-scroll": "^1.9.0",
     "resolve": "1.20.0",
     "resolve-url-loader": "4.0.0",
     "sass-loader": "12.3.0",
@@ -64,6 +68,8 @@
     "workbox-webpack-plugin": "6.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"

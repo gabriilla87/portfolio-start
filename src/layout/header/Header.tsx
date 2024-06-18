@@ -10,19 +10,25 @@ export const menuItems = [
     {
         id: 1,
         name: "About",
-        href: "#mainSection",
+        href: "mainSection",
     },
 
     {
-        id: 1,
+        id: 2,
+        name: "Skills",
+        href: "skillsSection",
+    },
+
+    {
+        id: 3,
         name: "Projects",
-        href: "#projectsSection",
+        href: "projectsSection",
     },
 
     {
-        id: 1,
+        id: 4,
         name: "Contacts",
-        href: "#contactsSection",
+        href: "contactsSection",
     }
 
 ]

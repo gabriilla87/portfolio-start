@@ -6,7 +6,7 @@ import {S} from "./Skills_Styles";
 
 export const Skills = () => {
     return (
-        <S.Skills>
+        <S.Skills id={"skillsSection"}>
             <Container>
                     <SectionTitle>Skills</SectionTitle>
                     <S.GridWrapper>

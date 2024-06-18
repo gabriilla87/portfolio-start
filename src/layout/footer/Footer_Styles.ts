@@ -6,6 +6,7 @@ const Footer = styled.footer`
     padding-bottom: 240px;
     position: relative;
     background-color: ${theme.colors.primary};
+    z-index: 0;
     
     ul{
         display: flex;
@@ -21,11 +22,12 @@ const Footer = styled.footer`
         position: absolute;
         right: 50%;
         transform: translateX(50%);
+        z-index: -1;
     }
 `
 
 const Link = styled.a`
-    
+
 `
 
 const SocialIconItem = styled.li`
