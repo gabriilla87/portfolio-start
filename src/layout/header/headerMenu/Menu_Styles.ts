@@ -1,4 +1,5 @@
 import styled, {css} from "styled-components";
+import {theme} from "../../../styles/Theme";
 
 // Menu
 
@@ -9,8 +10,9 @@ const Link = styled.a`
     line-height: 28px;
 `
 
+
 const MenuItem = styled.li`
-    
+
 `
 
 // Mobile Menu
@@ -32,11 +34,17 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
         display: flex;
         justify-content: center;
         align-items: center;
+        
+        a {
+            color: ${theme.colors.accent};
+        }
     `}
 
     ul {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 48px;
     }
 `

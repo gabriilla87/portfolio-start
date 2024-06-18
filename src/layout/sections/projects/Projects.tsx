@@ -27,7 +27,7 @@ const projectsData = [
 
 export const Projects: React.FC = () => {
     return (
-        <S.Projects>
+        <S.Projects id={"projectsSection"}>
             <Container>
                 <FlexWrapper direction={"column"}>
                     <SectionTitle>Projects</SectionTitle>

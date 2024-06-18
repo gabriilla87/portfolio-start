@@ -8,7 +8,7 @@ import {S} from "./Main_Styles";
 export const Main: React.FC = () => {
     return (
         //Эту секцию полностью глянуть
-        <S.Main>
+        <S.Main id={"mainSection"}>
             <Container>
                 <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap-reverse"} gap={'70px'}>
                     <S.TextWrapper>

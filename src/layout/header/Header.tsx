@@ -6,7 +6,26 @@ import {Container} from "../../components/Container";
 import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
 import {S} from "./Header_Styles";
 
-const items = ["About", "Projects", "Contacts"]
+export const menuItems = [
+    {
+        id: 1,
+        name: "About",
+        href: "#mainSection",
+    },
+
+    {
+        id: 1,
+        name: "Projects",
+        href: "#projectsSection",
+    },
+
+    {
+        id: 1,
+        name: "Contacts",
+        href: "#contactsSection",
+    }
+
+]
 
 export const Header: React.FC = () => {
 
@@ -24,8 +43,8 @@ export const Header: React.FC = () => {
             <Container>
                 <FlexWrapper justify={"space-between"} align={"center"}>
                     <Icon iconId={"brandLogo"} width="189" height="20" viewBox="0 0 189 20"/>
-                    {width < breakpoint ? <MobileMenu menuItems={items}/>
-                                        : <DesktopMenu menuItems={items}/>}
+                    {width < breakpoint ? <MobileMenu/>
+                                        : <DesktopMenu/>}
                 </FlexWrapper>
             </Container>
         </S.Header>

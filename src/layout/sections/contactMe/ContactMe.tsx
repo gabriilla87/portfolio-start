@@ -7,7 +7,7 @@ import {S} from "./ContactMe_Styles";
 
 export const ContactMe: React.FC = () => {
     return (
-        <S.ContactMe>
+        <S.ContactMe id={"contactsSection"}>
             <Container>
                 <FlexWrapper direction={"column"} align={"center"}>
                     <SectionTitle>Contact Me</SectionTitle>
